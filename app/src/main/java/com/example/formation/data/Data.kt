@@ -1,6 +1,7 @@
 package com.example.formation.data
 
 import com.example.formation.model.DataAnalityc
+import com.example.formation.model.DataLastContent
 import com.example.formation.model.DataRevenue
 import java.util.Locale.US
 
@@ -33,5 +34,32 @@ object Data {
             title = "janvier(Encore",
             value = 100f
         )
+    )
+
+    val dataLatContent = listOf<DataLastContent>(
+        DataLastContent(
+            title = "Développement des application mobile",
+            pulbliAt = "Il y a 2 jours",
+            favorite = "200",
+            "100k",
+            "300"
+
+        ),
+                DataLastContent(
+                title = "Développement des application mobile",
+        pulbliAt = "Il y a 2 jours",
+        favorite = "200",
+        "100k",
+        "300"
+
+    ),
+    DataLastContent(
+    title = "Développement des application mobile",
+    pulbliAt = "Il y a 2 jours",
+    favorite = "200",
+    "100k",
+    "300"
+
+    )
     )
 }

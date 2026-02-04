@@ -37,7 +37,7 @@ fun MyBottomAppBar() {
       Row (
           verticalAlignment = Alignment.Bottom,
           horizontalArrangement = Arrangement.SpaceEvenly,
-          modifier = Modifier.fillMaxSize().background(color = MaterialTheme.colorScheme.surface)
+          modifier = Modifier.fillMaxWidth().background(color = MaterialTheme.colorScheme.surface)
 
       ) {
           BottomMenuItem(icon = Icons.Default.Home , title = "Dashboard")

@@ -18,7 +18,7 @@ fun Screen() {
 
         },
         bottomBar = {
-           // MyBottomAppBar()
+            MyBottomAppBar()
         }
     ) {
             Column(modifier = Modifier.padding(it)) {

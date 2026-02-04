@@ -66,6 +66,7 @@ fun DataRevenue(data: DataRevenue, ratio : Float) {
         modifier = Modifier
         .fillMaxWidth().padding(8.dp, 6.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
                  data.title,
@@ -73,6 +74,7 @@ fun DataRevenue(data: DataRevenue, ratio : Float) {
                  color = Color.DarkGray,
                  fontSize = 20.sp,
                  softWrap = true,
+                 modifier = Modifier.weight(1f)
 
 
           )
@@ -82,12 +84,13 @@ fun DataRevenue(data: DataRevenue, ratio : Float) {
         ){
             Box(
                 modifier = Modifier.height(10.dp).fillMaxWidth(ratio).
-                clip(RoundedCornerShape(4.dp)).
-                background(color = Color.Blue)
+                clip(RoundedCornerShape(8.dp)).
+                background(color = Color.Blue).weight(2f)
+
             )
 
         }
-        Text("sdlfkslfksjdf")
+
 
         Text(
             data.value.toString(),
